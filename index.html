@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-container>
+            <div class="text-h2">Welcome to Pharmacy API List</div>
+                  <v-expansion-panels class="mb-6">
+                    <v-expansion-panel
+                      v-for="(item,i) in 3"
+                      :key="i"
+                    >
+                      <v-expansion-panel-header expand-icon="mdi-menu-down">
+                        API Name
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                          <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item-title>
+                                    {
+                                        "name":"tanzil"
+                                        "relationship":"A secret Relationship With Senior Apu"
+                                    }
+                                </v-list-item-title>
+                          </v-list-item>
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                  </v-expansion-panels>
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+</html>
