@@ -13,14 +13,8 @@
         <v-container>
             <div class="text-h2">Welcome to Pharmacy API List</div>
                   <v-expansion-panels class="mb-6">
-                    <v-expansion-panel
-                      v-for="(item,i) in 3"
-                      :key="i"
-                    >
+                    <v-expansion-panel>
                       <v-expansion-panel-header expand-icon="mdi-menu-down">
-                         <template v-slot:actions>
-                        <v-icon class="icon">mdi-menu-down</v-icon>
-                    </template>
                     <span class="header">API NAME</span>
                       </v-expansion-panel-header>
                       <v-expansion-panel-content>
