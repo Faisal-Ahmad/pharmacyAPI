@@ -18,7 +18,10 @@
                       :key="i"
                     >
                       <v-expansion-panel-header expand-icon="mdi-menu-down">
-                        API Name
+                         <template v-slot:actions>
+                        <v-icon class="icon">mdi-menu-down</v-icon>
+                    </template>
+                    <span class="header">API NAME</span>
                       </v-expansion-panel-header>
                       <v-expansion-panel-content>
                           <v-list-item>
